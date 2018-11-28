@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+<title>Tela Aluno</title>
+</head>
+<h:body>
+<h:form>
+Pesquisa por nome do aluno : <h:inputText value="#{alunoMB.aluno.nome}"></h:inputText> <br/><br/>
+<h:commandButton action = "#{alunoMB.pesquisar}" value="Pesquisar"></h:commandButton><br/><br/>
+
+<h:commandButton action = "#{alunoMB.telaCadastro}" value="Inserir aluno na base"></h:commandButton><br/><br/>
+<h:commandButton action = "#{alunoMB.TesteAluno}" value="Testar Conexao"></h:commandButton><br/><br/>
+<h:commandLink action="menu"> \\ Voltar </h:commandLink><br/>
+</h:form>
+</h:body>
+</html>

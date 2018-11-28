@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html
+ xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+<title>Visualizar</title>
+</head>
+<h:body>
+RM Aluno Status <br/><br/>
+
+	<h:form>
+		#{alunoMB.aluno.RM}
+		#{alunoMB.aluno.nome}
+		#{alunoMB.aluno.status}
+		<h:commandLink action="aluno" value="Voltar" />
+	</h:form>
+
+</h:body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Cadastro de Aluno</title>
+</head>
+<h:body>
+<h:form>
+RM Aluno: <h:inputText value="#{alunoMB.aluno.RM}"></h:inputText> <br/><br/>
+Nome Aluno: <h:inputText value="#{alunoMB.aluno.nome}"></h:inputText> <br/><br/>
+Status Aluno: <h:inputText value="#{alunoMB.aluno.status}"></h:inputText> <br/><br/>
+<h:commandButton action = "#{alunoMB.CadastrarAluno}" value="Cadastrar"></h:commandButton><br/><br/>
+<h:commandLink action="aluno"> \\ Voltar </h:commandLink><br/>
+</h:form>
+</h:body>
+</html>
